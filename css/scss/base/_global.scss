@@ -1,0 +1,7 @@
+// My MixIns
+@mixin topspace($space: 5rem) {
+    margin-top: $space;
+}
+@mixin bottomspace($space: 5rem) {
+    padding-bottom: $space;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="css/styles.css"/>
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<title>Default</title>
+<body>
+  <header>
+    <nav>
+      <section class="menu">
+        <!-- Sliding Panel-->
+        <button type="button" class="primary js-menu-trigger sliding-panel-button">☰ Click for Sliding Panel</button>
+        <ul class="js-menu sliding-panel-content">
+          <li><a href="#parallax">Parallax Window</a></li>
+          <li><a href="javascript:void(0)">Item 2</a></li>
+          <li><a href="javascript:void(0)">Item 3</a></li>
+        </ul>
+        <div class="js-menu-screen sliding-panel-fade-screen"></div>
+        <!--  End Sliding Panel-->
+      </section>
+      <div class="logoarea"><a href="#"><img src="img/256x64.png" class="logo"/></a></div>
+      <section class="search">
+        <!-- Search Bar-->
+        <form role="search" class="search-bar">
+          <input type="search" placeholder="Enter Search"/>
+          <button type="submit"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png" alt="search-icon"/></button>
+        </form>
+        <!-- End search bar-->
+      </section>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Responsive Video Embed-->
+    <div class="video"> 
+      <div class="video-wrapper">
+        <iframe src="http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&amp;iv_load_policy=3&amp;controls=0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
+      </div>
+    </div>
+    <!-- End Video Embed-->
+    <div style="margin-bottom:5rem"></div>
+    <!-- Fade In-->
+    <div id="js-fadeInElement" class="fade-in-element">This box will fade in when it's <b>400px above the bottom</b> of the window.<br/>And disappear as it goes <b>below the bottom</b> of the window.<br/>If JavaScript is disabled, it will still show up.</div>
+    <!-- End Fade In--><a id="parallax"></a>
+    <!-- Parrallax-->
+    <div id="js-parallax-window" class="parallax-window">
+      <div class="parallax-static-content"><b>Parallax Window</b></div>
+      <div id="js-parallax-background" class="parallax-background"></div>
+    </div>
+    <!-- End Parrallax-->
+    <!--  Flash Alerts-->
+    <div class="flash-success"><span>This is a success message <a href="#">with a link </a></span></div>
+    <div class="flash-error"><span>This is an error message <a href="#">with a link</a></span></div>
+    <div class="flash-notice"><span>This is a notice message <a href="#">with a link</a></span></div>
+    <div class="flash-alert"><span>This is an alert message <a href="#">with a link				</a></span></div>
+    <!--  End Flash Alerts-->
+    <!-- Hover Buttons-->
+    <div class="hover-button">
+      <button type="button" name="button" class="primary">Hover Primary</button>
+    </div>
+    <button type="button" name="button" class="primary">Default Primary</button>
+    <div class="hover-button">
+      <button type="button" name="button" class="alt">Hover Alternate</button>
+    </div>
+    <button type="button" name="button" class="alt">Default Alternate</button>
+    <div style="margin-bottom:20rem"></div>
+    <!-- expander-->
+    <div class="expander"><a href="javascript:void(0)" class="expander-trigger expander-hidden">Expandable section</a>
+      <div class="expander-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio mollitia fugiat facilis enim accusamus quisquam aut, repellendus incidunt quod optio facere labore illo numquam ipsum beatae vero debitis, fugit excepturi.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer-->
+  <footer role="contentinfo" class="footer-2">
+    <p>	© 2016 Kitchen Sink</p>    
+    <div class="footer-secondary-links"><a href="http://www.brainstormbrander.com/">Designed and Maintained</a>
+      <ul class="footer-social">
+        <li><a href="http://www.brainstormbrander.com"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook"/></a></li>        
+        <li><a href="javascript:void(0)"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter"/></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>

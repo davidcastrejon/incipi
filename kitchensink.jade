@@ -1,0 +1,113 @@
+//output:kitchensink.html
+
+<!DOCTYPE html>
+html(lang="en")
+
+meta(charset="UTF-8")
+
+link(rel="stylesheet", href="css/styles.css")
+script(type="text/javascript", src="js/jquery-2.2.3.min.js")
+script(type="text/javascript", src="js/script.js")
+
+
+title Default
+
+body
+	header
+		nav
+			section.menu
+				// Sliding Panel
+				button.primary(type="button").js-menu-trigger.sliding-panel-button ☰ Click for Sliding Panel
+
+
+				ul.js-menu.sliding-panel-content
+					li
+						a(href="#parallax") Parallax Window
+					li
+						a(href="javascript:void(0)") Item 2
+					li
+						a(href="javascript:void(0)") Item 3
+				div.js-menu-screen.sliding-panel-fade-screen
+				//  End Sliding Panel
+
+			div.logoarea
+				a(href="#")
+					img.logo(src="img/256x64.png")
+
+			section.search
+				// Search Bar
+				form.search-bar(role="search")
+					input(type="search" placeholder="Enter Search")
+					button(type="submit")
+						img(src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png" alt="search-icon")
+				// End search bar
+
+	.container
+
+		// Responsive Video Embed
+		.video 
+			.video-wrapper
+				iframe(src="http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&iv_load_policy=3&controls=0" frameborder="0" allowfullscreen) 
+		// End Video Embed
+		div(style="margin-bottom:"+5+"rem")
+		// Fade In
+		#js-fadeInElement.fade-in-element This box will fade in when it's <b>400px above the bottom</b> of the window.
+			br
+			| And disappear as it goes <b>below the bottom</b> of the window.
+			br
+			| If JavaScript is disabled, it will still show up.
+		// End Fade In
+		a(id="parallax")
+		// Parrallax
+		#js-parallax-window.parallax-window
+			.parallax-static-content
+				b Parallax Window
+			#js-parallax-background.parallax-background
+		// End Parrallax
+
+		//  Flash Alerts
+		.flash-success
+			span This is a success message 
+				a(href="#") with a link 
+		.flash-error
+			span This is an error message 
+				a(href="#") with a link
+		.flash-notice
+			span This is a notice message 
+				a(href="#") with a link
+		.flash-alert
+			span This is an alert message 
+				a(href="#") with a link				
+		//  End Flash Alerts
+
+		// Hover Buttons
+		.hover-button
+			button.primary(type="button", name="button") Hover Primary
+		button.primary(type="button", name="button") Default Primary
+		.hover-button
+			button.alt(type="button", name="button") Hover Alternate
+		button.alt(type="button", name="button") Default Alternate
+
+		div(style="margin-bottom:"+20+"rem")
+
+		// expander
+		div.expander
+			a(href="javascript:void(0)" class="expander-trigger expander-hidden") Expandable section
+			div.expander-content
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio mollitia fugiat facilis enim accusamus quisquam aut, repellendus incidunt quod optio facere labore illo numquam ipsum beatae vero debitis, fugit excepturi.
+	// Footer
+	footer.footer-2(role='contentinfo')
+		p 	© 2016 Kitchen Sink
+		|     
+		.footer-secondary-links
+			a(href="http://www.brainstormbrander.com/") Designed and Maintained
+
+
+			ul.footer-social
+				li
+					a(href='http://www.brainstormbrander.com')
+						img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png', alt='Facebook')
+				|         
+				li
+					a(href='javascript:void(0)')
+						img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png', alt='Twitter')

@@ -1,0 +1,48 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+@import "layout/layout";
+
+// Top Bar
+header {
+    background-color: $light-gray;
+}
+nav {
+    // border: 1px solid $medium-gray;
+    height: 5rem;
+    @include outer-container(90vw);
+
+    .menu {
+        // border: 1px solid $medium-gray;
+        margin-top: 1.2rem;
+        @include span-columns(3);
+    }
+    .logoarea {
+        // border: 1px solid $medium-gray;
+        text-align: center;
+        // margin-top: 0.21rem;
+        @include span-columns(6);
+
+        .logo {
+            width: auto;
+            margin-top: 0.5rem
+        }
+    }
+    .search {
+        // border: 1px solid $medium-gray;
+        margin-top: 1.1rem;
+        @include span-columns(3);
+        float: right;
+    }
+}
+.container {
+    @include outer-container(960px);
+}
+.video {
+    @include topspace(10rem);
+}
+
+.hover-button {
+    @include hoverbutton;
+    @include topspace(2rem);
+}
